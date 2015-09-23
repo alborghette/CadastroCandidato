@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fromEmail</key>
+	<string></string>
+	<key>relayHost</key>
+	<string></string>
+	<key>relayPort</key>
+	<array>
+		<integer>0</integer>
+	</array>
+	<key>login</key>
+	<string></string>
+	<key>pass</key>
+	<string></string>
+	<key>requiresAuth</key>
+	<true/>
+	<key>wantsSecure</key>
+	<true/>
+</dict>
+</plist>
