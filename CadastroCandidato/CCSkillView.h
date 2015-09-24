@@ -13,7 +13,7 @@
 /*!
  *  @brief  Referencia do slider de nota
  */
-@property (weak, nonatomic) IBOutlet UISlider    *slider;
+@property (weak, nonatomic) IBOutlet UISlider *slider;
 
 /*!
  *  @brief  Textfield com a nota

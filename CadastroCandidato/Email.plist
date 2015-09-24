@@ -5,10 +5,10 @@
 	<key>fromEmail</key>
 	<string></string>
 	<key>relayHost</key>
-	<string></string>
+	<string>smtp-mail.outlook.com</string>
 	<key>relayPort</key>
 	<array>
-		<integer>0</integer>
+		<integer>587</integer>
 	</array>
 	<key>login</key>
 	<string></string>

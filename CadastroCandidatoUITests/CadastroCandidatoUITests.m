@@ -32,9 +32,22 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    // Use recording to get started writing UI tests.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+- (void)testLogin {
+    
+    [XCUIDevice sharedDevice].orientation = UIDeviceOrientationPortrait;
+    [XCUIDevice sharedDevice].orientation = UIDeviceOrientationPortrait;
+    
+    XCUIApplication *app = [[XCUIApplication alloc] init];
+    XCUIElement *nomeCompletoTextField = app.textFields[@"Nome Completo"];
+    [nomeCompletoTextField tap];
+    [nomeCompletoTextField typeText:@"murilo"];
+    
+    XCUIElement *eMailTextField = app.textFields[@"E-mail"];
+    [eMailTextField tap];
+    [eMailTextField typeText:@"murilo.alves@outlook.com"];
+    [eMailTextField typeText:@""];
+    [app typeText:@"\n"];
+    
 }
 
 @end

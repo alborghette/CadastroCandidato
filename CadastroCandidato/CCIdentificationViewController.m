@@ -79,9 +79,7 @@
     if ([self validadeField:_txtName] && [self validadeField:_txtEmail] && [_txtEmail.text isValidEmail]) {
         
         // Armazena os campos de nome e email
-        CCSession *session = [CCSession sharedInstance];
-        [session.applicant setName:_txtName.text];
-        [session.applicant setEmail:_txtEmail.text];
+        [self saveApplicantIdentificationName:_txtName.text andEmail:_txtEmail.text];
         
         // Chama a próxima tela
         [self performSegueWithIdentifier:@"SkillsScreenSegue" sender:sender];
@@ -95,6 +93,16 @@
         }
     }
 }
+
+/*!
+ *  @brief  Salva o nome e email do candidato no model de dados.
+ */
+- (void)saveApplicantIdentificationName:(NSString *)name andEmail:(NSString *)email {
+    CCSession *session = [CCSession sharedInstance];
+    [session.applicant setName:name];
+    [session.applicant setEmail:email];
+}
+
 
 /*!
  *  @brief  Retorna se o campo de texto esta preenchido
@@ -188,24 +196,19 @@
  */
 - (void)moveTextfieldToUp:(BOOL)move {
     [UIView beginAnimations:nil context:NULL];
-    [UIView setAnimationDuration:0.3]; // if you want to slide up the view
+    [UIView setAnimationDuration:0.3];
     
-    CGRect rect = self.view.frame;
+    CGRect viewFrame = self.view.frame;
     
     if (move) {
-        // 1. move the view's origin up so that the text field that will be hidden come above the keyboard
-        // 2. increase the size of the view so that the area behind the keyboard is covered up.
-        rect.origin.y -= kOFFSET_FOR_KEYBOARD;
-//        rect.size.height += kOFFSET_FOR_KEYBOARD;
-        
+        //Teclado habilitado
+        viewFrame.origin.y -= kOFFSET_FOR_KEYBOARD;
     } else {
-        
-        // revert back to the normal state.
-        rect.origin.y += kOFFSET_FOR_KEYBOARD;
-//        rect.size.height -= kOFFSET_FOR_KEYBOARD;
+        //Teclado removido
+        viewFrame.origin.y += kOFFSET_FOR_KEYBOARD;
         
     }
-    self.view.frame = rect;
+    self.view.frame = viewFrame;
     
     [UIView commitAnimations];
 }

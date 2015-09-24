@@ -14,7 +14,6 @@
 		9D0D9C781BB046E2001B0EF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D0D9C761BB046E2001B0EF8 /* Main.storyboard */; };
 		9D0D9C7A1BB046E2001B0EF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D0D9C791BB046E2001B0EF8 /* Assets.xcassets */; };
 		9D0D9C7D1BB046E2001B0EF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D0D9C7B1BB046E2001B0EF8 /* LaunchScreen.storyboard */; };
-		9D0D9C881BB046E2001B0EF8 /* CadastroCandidatoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0D9C871BB046E2001B0EF8 /* CadastroCandidatoTests.m */; };
 		9D0D9C931BB046E2001B0EF8 /* CadastroCandidatoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0D9C921BB046E2001B0EF8 /* CadastroCandidatoUITests.m */; };
 		9D0D9CA21BB08459001B0EF8 /* CCSkillsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0D9CA11BB08459001B0EF8 /* CCSkillsViewController.m */; settings = {ASSET_TAGS = (); }; };
 		9D0D9CAD1BB0966B001B0EF8 /* CCSkillView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0D9CAC1BB0966B001B0EF8 /* CCSkillView.m */; settings = {ASSET_TAGS = (); }; };
@@ -24,6 +23,7 @@
 		9D0F121A1BB2C8B2006165E9 /* CCEmailManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0F12191BB2C8B2006165E9 /* CCEmailManager.m */; settings = {ASSET_TAGS = (); }; };
 		9D0F121C1BB2C8EE006165E9 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D0F121B1BB2C8EE006165E9 /* CFNetwork.framework */; };
 		9D0F121F1BB2E032006165E9 /* CCSpinnerLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0F121E1BB2E032006165E9 /* CCSpinnerLoader.m */; settings = {ASSET_TAGS = (); }; };
+		9D1674761BB4773800CAEEA0 /* CCIdentificationViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D1674751BB4773800CAEEA0 /* CCIdentificationViewControllerTests.m */; settings = {ASSET_TAGS = (); }; };
 		9D2A342B1BB333A600655256 /* NSString+Email.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D2A342A1BB333A600655256 /* NSString+Email.m */; settings = {ASSET_TAGS = (); }; };
 		9D2A342D1BB33D7600655256 /* Email.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D2A342C1BB33D7600655256 /* Email.plist */; settings = {ASSET_TAGS = (); }; };
 		ACEDCEDF5C9987272BF4FECF /* libPods-CadastroCandidatoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F7EE5714430A6C680EA669 /* libPods-CadastroCandidatoTests.a */; };
@@ -62,7 +62,6 @@
 		9D0D9C7C1BB046E2001B0EF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D0D9C7E1BB046E2001B0EF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D0D9C831BB046E2001B0EF8 /* CadastroCandidatoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CadastroCandidatoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D0D9C871BB046E2001B0EF8 /* CadastroCandidatoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CadastroCandidatoTests.m; sourceTree = "<group>"; };
 		9D0D9C891BB046E2001B0EF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D0D9C8E1BB046E2001B0EF8 /* CadastroCandidatoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CadastroCandidatoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D0D9C921BB046E2001B0EF8 /* CadastroCandidatoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CadastroCandidatoUITests.m; sourceTree = "<group>"; };
@@ -82,6 +81,7 @@
 		9D0F121B1BB2C8EE006165E9 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		9D0F121D1BB2E032006165E9 /* CCSpinnerLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCSpinnerLoader.h; sourceTree = "<group>"; };
 		9D0F121E1BB2E032006165E9 /* CCSpinnerLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCSpinnerLoader.m; sourceTree = "<group>"; };
+		9D1674751BB4773800CAEEA0 /* CCIdentificationViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCIdentificationViewControllerTests.m; sourceTree = "<group>"; };
 		9D2A34291BB333A600655256 /* NSString+Email.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Email.h"; sourceTree = "<group>"; };
 		9D2A342A1BB333A600655256 /* NSString+Email.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Email.m"; sourceTree = "<group>"; };
 		9D2A342C1BB33D7600655256 /* Email.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Email.plist; sourceTree = "<group>"; };
@@ -179,8 +179,8 @@
 		9D0D9C861BB046E2001B0EF8 /* CadastroCandidatoTests */ = {
 			isa = PBXGroup;
 			children = (
-				9D0D9C871BB046E2001B0EF8 /* CadastroCandidatoTests.m */,
 				9D0D9C891BB046E2001B0EF8 /* Info.plist */,
+				9D1674751BB4773800CAEEA0 /* CCIdentificationViewControllerTests.m */,
 			);
 			path = CadastroCandidatoTests;
 			sourceTree = "<group>";
@@ -467,7 +467,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D0D9C881BB046E2001B0EF8 /* CadastroCandidatoTests.m in Sources */,
+				9D1674761BB4773800CAEEA0 /* CCIdentificationViewControllerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

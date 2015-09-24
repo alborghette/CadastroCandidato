@@ -10,7 +10,4 @@
 
 @implementation CCApplicantModel
 
-
-
-
 @end
